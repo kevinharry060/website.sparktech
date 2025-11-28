@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact - Spark Tech</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Spark Tech</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="works.html">Works</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contactus.html" class="active">Contact</a></li>
+                <li><a href="apply.html">Services</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="page-wrapper">
+        <main>
+            <div class="section-wrapper contact-form">
+                <h2>Let's Work Together</h2>
+                <p>We're here to turn your idea into a secure and high-quality digital product.</p>
+                <form>
+                    <div class="form-group">
+                        <label for="cname">Name</label>
+                        <input type="text" id="cname" name="cname">
+                    </div>
+                    <div class="form-group">
+                        <label for="cemail">Email</label>
+                        <input type="email" id="cemail" name="cemail">
+                    </div>
+                    <div class="form-group">
+                        <label for="cmsg">Message</label>
+                        <textarea id="cmsg" name="cmsg"></textarea>
+                    </div>
+                    <button type="submit">Send</button>
+                </form>
+                <p><strong>Email:</strong> sparktechsolutions@company.com</p>
+                <p><strong>Phone/WhatsApp:</strong> +91-XXXXXXXXXX</p>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2025 Spark Tech. All rights reserved.</p>
+    </footer>
+    <script src="transition.js"></script>
+</body>
+</html>

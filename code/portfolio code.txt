@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio - Spark Tech</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Spark Tech</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="works.html">Works</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+                <li><a href="apply.html">Services</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="page-wrapper">
+        <main>
+            <div class="section-wrapper">
+                <h2>Our Work</h2>
+                <p>Below are sample projects showcasing our expertise in development and cybersecurity.</p>
+                <div class="image-row">
+                    <div class="img-box">
+                        <img src="images/portfolio1.jpg" alt="E-commerce Website">
+                        <p>E-commerce Website: Modern UI, secure checkout, product dashboard.</p>
+                    </div>
+                    <div class="img-box">
+                        <img src="images/portfolio2.jpg" alt="Mobile Booking App">
+                        <p>Mobile Booking App: Clean design, real-time notifications.</p>
+                    </div>
+                    <div class="img-box">
+                        <img src="images/portfolio3.jpg" alt="VAPT Assessment">
+                        <p>VAPT Assessment: Identified vulnerabilities, strengthened security.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2025 Spark Tech. All rights reserved.</p>
+    </footer>
+    <script src="transition.js"></script>
+</body>
+</html>

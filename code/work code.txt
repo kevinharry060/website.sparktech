@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Works - Spark Tech</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Spark Tech</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="works.html" class="active">Works</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+                <li><a href="apply.html">Services</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="page-wrapper">
+        <main>
+            <section class="section-wrapper">
+                <h2>Our Services in Action</h2>
+                <p>Explore some examples of how Spark Tech delivers secure, modern, and reliable digital solutions to our clients.</p>
+                <ul>
+                    <li><strong>Website Development:</strong> Crafted fast, scalable e-commerce and business websites with clean UI/UX and secure checkout systems.</li>
+                    <li><strong>Mobile App Development:</strong> Built Android and iOS apps including real-time notification and booking features tailored to client needs.</li>
+                    <li><strong>Cybersecurity VAPT:</strong> Conducted thorough penetration testing on web and mobile applications to identify vulnerabilities and enhance security.</li>
+                    <li><strong>Custom Software Solutions:</strong> Developed bespoke admin dashboards, automation tools, and CRM/ERP modules improving efficiency and performance.</li>
+                </ul>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2025 Spark Tech. All rights reserved.</p>
+    </footer>
+    <script src="transition.js"></script>
+</body>
+</html>
