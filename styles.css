@@ -1,0 +1,311 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Global */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* Header and Navigation */
+
+header {
+  background-color: #3498db;
+  color: white;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo h1 {
+  margin: 0;
+  font-size: 26px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  padding: 6px 10px;
+  border-radius: 4px;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background-color: #2980b9;
+}
+
+/* Transition effect for whole page */
+
+.page-wrapper {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.page-wrapper.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Footer */
+
+footer {
+  background-color: #3498db;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 40px;
+}
+
+/* Main layout */
+
+main {
+  padding: 40px 50px;
+}
+
+/* Home Page */
+
+.home-page .hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ecf6fd;
+  padding: 60px 40px;
+  border-radius: 8px;
+}
+
+.home-page .hero-content {
+  max-width: 50%;
+}
+
+.home-page .hero h2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #3498db;
+  margin-bottom: 15px;
+}
+
+.home-page .hero p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.home-page .cta-btn {
+  background-color: #ff6600;
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 18px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.home-page .cta-btn:hover {
+  background-color: #cc5200;
+}
+
+/* Right image box on home */
+
+.hero-image {
+  width: 40%;
+  min-height: 220px;
+  background-color: #d0e4ff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Generic section wrapper */
+
+.section-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.section-wrapper h2 {
+  color: #3498db;
+  margin-bottom: 15px;
+}
+
+/* Shared image gallery block (used in portfolio) */
+
+.image-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.image-row .img-box {
+  flex: 1 1 180px;
+  background-color: #ecf6fd;
+  border-radius: 6px;
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  /* NEW: border + shadow for portfolio images */
+  border: 2px solid #3498db;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+.image-row .img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Contact form */
+
+.contact-form .form-group {
+  margin-bottom: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #3498db;
+}
+
+.contact-form textarea {
+  min-height: 120px;
+}
+
+.contact-form button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #2980b9;
+}
+
+/* Apply / Services page form */
+
+.apply-page .registration-form {
+  background: linear-gradient(135deg, #101c3c, #182852);
+  color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  margin: 30px auto;
+  max-width: 700px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+.apply-page .registration-form h2 {
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 28px;
+}
+
+.apply-page .registration-form p {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #d0d4ff;
+}
+
+.apply-page .registration-form label {
+  color: #dde3ff;
+  font-size: 14px;
+}
+
+.apply-page .registration-form input,
+.apply-page .registration-form select,
+.apply-page .registration-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 4px;
+  border: 1px solid #44508a;
+  background-color: rgba(10, 16, 40, 0.9);
+  color: #fff;
+}
+
+.apply-page .registration-form input::placeholder {
+  color: #a3addc;
+}
+
+.apply-page .registration-form .form-row {
+  display: flex;
+  gap: 15px;
+}
+
+.apply-page .registration-form .form-group {
+  margin-bottom: 15px;
+}
+
+.apply-page .registration-form .form-group.half {
+  flex: 1;
+}
+
+.apply-page .registration-form .sub-title {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* Works page cards */
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.card {
+  background-color: #0d6efd; /* blue */
+  color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+}
